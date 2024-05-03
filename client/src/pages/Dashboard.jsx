@@ -62,6 +62,17 @@ const CardWrapper = styled.div`
     gap: 12px;
   }
 `;
+const EndName = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: small;
+  font-weight: 600;
+  justify-content: center;
+  @media (max-width: 600px) {
+    gap: 12px;
+  }
+`;
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
@@ -139,6 +150,7 @@ const Dashboard = () => {
               <WorkoutCard workout={workout} />
             ))}
           </CardWrapper>
+          <EndName>©️ MADE BY HUSAIN CYCLEWALA</EndName>
         </Section>
       </Wrapper>
     </Container>
